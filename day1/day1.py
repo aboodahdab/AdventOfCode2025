@@ -1,8 +1,9 @@
+
 DIAL_VALUE = 50
 zero_times = 0
 
 
-def ToLeftOrRight(string, dial_value,zero_times):
+def ToLeftOrRight(string, dial_value, zero_times):
 
     string_splited = string.split("\n")
     new_position = None
@@ -23,7 +24,7 @@ def ToLeftOrRight(string, dial_value,zero_times):
             if new_position == 0:
                 zero_times += 1
 
-        print("zero_times m3lmi",zero_times)
+        print("zero_times m3lmi", zero_times)
 
 
 with open("day1puzzle.txt", "r") as file:

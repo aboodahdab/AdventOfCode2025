@@ -14,8 +14,8 @@ def check_if_invalid(string_number,):
         print("what is that bro", string_number)
         global invalid_ids
         invalid_ids += int(string_number)
-        print(invalid_ids,"that is invalid")
-    return True
+        print(invalid_ids, "that is invalid")
+    return invalid_ids
 # need to check for repeated integers like 1010
 
 
@@ -29,10 +29,10 @@ def split_content(string):
         first_number = int(str_ranges[0])
         last_number = int(str_ranges[1])
         print(first_number, last_number)
-        for j in range(first_number, last_number):
+        for j in range(first_number, last_number+1):
             j_str = str(j)
             check_if_invalid(j_str)
-    print(invalid_ids,"these are invalid ids")
+    print(invalid_ids, "these are invalid ids")
 
 
 with open(PUZZLE_FILENAME, "r") as file:
