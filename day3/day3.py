@@ -18,7 +18,7 @@ def organize_content(content):
                 calc_joltage = 10 * int(num)+int(other_num)
                 if calc_joltage > biggest_num:
                     biggest_num = calc_joltage
-        result += biggest_num
+            result += biggest_num
 
     print(result)
 
