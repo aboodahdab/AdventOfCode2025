@@ -25,7 +25,7 @@ def check_the_neighbors(row_index, col_index, grid):
                 at_neighbors += 1
 
     if at_neighbors < 4:
-        accessible_at_count += 1    
+        accessible_at_count += 1
     print(accessible_at_count)
 
 
