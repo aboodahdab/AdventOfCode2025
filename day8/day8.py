@@ -1,4 +1,3 @@
-import math
 from collections import Counter
 PUZZLE_FILENAME = "day8puzzle.txt"
 STOP_AFTER_CONNECTIONS_NUMBER = 1000
