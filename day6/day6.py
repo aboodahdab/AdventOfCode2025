@@ -5,7 +5,9 @@ with open(PUZZLE_FILENAME) as f:
     number_lines = [line.split() for line in lines[:-1]]
     all_results = 0
     columns = list(zip(*number_lines))  # Transpose!
-    print(columns)
+    print(columns,
+          'columns')
+
     operators = lines[-1].split()
     print(operators)
     for col, op in zip(columns, operators):

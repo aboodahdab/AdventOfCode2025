@@ -13,25 +13,25 @@ def check_the_neighbors(row_index, col_index, grid):
     at_neighbors = 0
     global accessible_at_count
     for row_offset, col_offset in directions:
-        print(row_offset, row_index, col_offset, col_index)
+        # print(row_offset, row_index, col_offset, col_index)
         neighbor_row = row_index + row_offset
         neighbor_col = col_index + col_offset
         if 0 <= neighbor_row < len(grid) and 0 <= neighbor_col < len(grid[0]):
             # safe to access grid[neighbor_row][neighbor_col]
             symbol = grid[neighbor_row][neighbor_col]
-            print(symbol)
+            # print(symbol)
             neighbors += 1
             if symbol == "@":
                 at_neighbors += 1
 
     if at_neighbors < 4:
         accessible_at_count += 1
-    print(accessible_at_count)
+    # print(accessible_at_count)
 
 
 def organize_content(content):
     grid = [list(line.strip()) for line in content]
-
+    print(grid)
     for row_index, row in enumerate(content):
         stripped_row = row.strip()
         for column_index, symbol in enumerate(stripped_row):
