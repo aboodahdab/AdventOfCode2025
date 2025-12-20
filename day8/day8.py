@@ -20,7 +20,8 @@ def solve(boxes):
     circuits = list(range(len(boxes)))
 
     # Process the first 1000 pairs
-    for idx in range(min(1000, len(pairs))):
+    print(len(circuits))
+    for idx in range(min(1000, len(circuits)//2)):
         distance, box_i, box_j = pairs[idx]
 
         circuit_of_i = circuits[box_i]
