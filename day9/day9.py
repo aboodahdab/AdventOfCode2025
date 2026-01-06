@@ -6,6 +6,7 @@ def organize_content(content):
     for index, i in enumerate(content):
         splitted_i = i.split(",")
         col = int(splitted_i[0])
+
         row = int(splitted_i[1])
 
         for j in content[index + 1:]:
@@ -24,4 +25,4 @@ def organize_content(content):
 
 with open(PUZZLE_FILENAME, "r") as file:
     content = [i.strip() for i in file.readlines()]
-    print(organize_content(content), "max area")
+    print(organize_content(content), "maximum area")
